@@ -8,7 +8,7 @@ The deployment methods include `Pytorch`, `Libtorch`, `OpenCV DNN`,
 I wrote this project to get familiar with Yolo Deployment,
 and also to share and learn from the community.
 
-#Deployment Methods
+# Deployment Methods
 |Model Name|Deployment Methods|
 |---|---|
 |yolov5|[pytorch](https://github.com/xgyyao/YoloDeploy/tree/main/yolov5/pytorch)|
