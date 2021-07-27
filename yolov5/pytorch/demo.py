@@ -88,7 +88,7 @@ if __name__ == '__main__':
     # inference_single_image(weights_path, thresh, src_img, dst_img, cls, colors, gpu_id)
     inference_images(weights_path, thresh, src_dir, dst_dir, cls, colors, gpu_id)
     # inference_videos(weights_path, thresh, src_video, dst_video, cls, colors, gpu_id)
-
+#
 
 
 
