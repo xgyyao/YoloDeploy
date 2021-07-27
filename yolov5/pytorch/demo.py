@@ -80,14 +80,14 @@ if __name__ == '__main__':
     dst_img = "samples/images/zidane_res.jpg"
     cls = ['person', 'bus', 'horse', 'dog']
     colors = {0: (0, 0, 255), 5: (0, 255, 0)}
-    gpu_id = '1'
+    gpu_id = '0'
     src_dir = "samples/images/"
     dst_dir = "samples/images/res/"
     src_video = "samples/videos/person.mp4"
     dst_video = "samples/videos/person_res.mp4"
-    #inference_single_image(weights_path, thresh, src_img, dst_img, cls, colors, gpu_id)
-    # inference_images(weights_path, thresh, src_dir, dst_dir, cls, colors, gpu_id)
-    inference_videos(weights_path, thresh, src_video, dst_video, cls, colors, gpu_id)
+    # inference_single_image(weights_path, thresh, src_img, dst_img, cls, colors, gpu_id)
+    inference_images(weights_path, thresh, src_dir, dst_dir, cls, colors, gpu_id)
+    # inference_videos(weights_path, thresh, src_video, dst_video, cls, colors, gpu_id)
 
 
 

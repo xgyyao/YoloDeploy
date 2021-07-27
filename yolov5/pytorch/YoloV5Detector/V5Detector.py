@@ -14,7 +14,7 @@ class Detector:
         self.device = select_device(self.device)
         model = attempt_load(self.weights, map_location=self.device)
         model.to(self.device).eval()
-        model.half()
+        model.float()
         self.m = model
         self.names = model.module.names if hasattr(
             model, 'module') else model.names
@@ -30,7 +30,7 @@ class Detector:
         img = img[:, :, ::-1].transpose(2, 0, 1)
         img = np.ascontiguousarray(img)
         img = torch.from_numpy(img).to(self.device)
-        img = img.half()
+        img = img.float()
         img /= 255.0
         if img.ndimension() == 3:
             img = img.unsqueeze(0)
